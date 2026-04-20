@@ -79,8 +79,6 @@
 
 ---
 
-# 🏠 Homework / Practice Challenge
-
 ### 8. Print all numbers divisible by 3 and 5 up to N
 **Input:**  
 `30`  
