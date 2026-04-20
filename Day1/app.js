@@ -39,10 +39,8 @@ console.log('q5')
 //q6:
 let n6 = 10
 let sum6 = 0
-for(let i=0; i<=n6; i++){
-    if(i%2===0){
+for(let i=2; i<=n6; i+=2){
         sum6 += i
-    }
 }
 console.log('sum even: ', sum6)
 console.log('q6')
@@ -66,10 +64,8 @@ console.log('q8')
 // q9:
 let n9 = 10
 let sum9 =0
-for(let i=1; i<=n9; i++){
-    if(i % 2 !== 0){
- sum9 += i
-    }
+for(let i=1; i<=n9; i+=2){
+   sum9 += i;
         
 }
 console.log(sum9)
@@ -78,20 +74,17 @@ console.log('q9')
 // q10:
 let n10 = 5
 for(let i=1;i<=n10; i++){
-    console.log(i*i*i)
+    console.log(i**3)
 }
 console.log('q10')
 
 //q11:
 let n11 = 20
 let sqrt = 1
-for (let i = 1; i <= n11; i++) {
+for (let i = 1; i*i <= n11; i++) {
     sqrt = i*i
-    if(i % 2 ==0 && sqrt %2 ==0){
-        console.log(i)
-    }
-    if(sqrt >n11){
-        break
+    if (sqrt % 2 === 0) {
+        console.log(sqrt);
     }
 }
 console.log('q11')
