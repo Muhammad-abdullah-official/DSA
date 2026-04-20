@@ -81,7 +81,7 @@ console.log('q10')
 //q11:
 let n11 = 20
 let sqrt = 1
-for (let i = 1; i*i <= n11; i++) {
+for (let i = 2; i*i <= n11; i+=2) {
     sqrt = i*i
     if (sqrt % 2 === 0) {
         console.log(sqrt);
