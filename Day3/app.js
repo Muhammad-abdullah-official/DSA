@@ -1,23 +1,25 @@
 // question 1
 console.log('-------------Q NO 1-----------')
-for (let i = 0; i < 5; i++) {
+for (let i = 1; i <= 5; i++) {
     let line = ''
     // for (let j = 0; j <= i; j++) {
+    //     // console.log('j',j)
     //     line += '*'
     // }
-    
-console.log('*'.repeat(i))
+    console.log('i:',i)
+console.log(`* ${i}`.repeat(i))
 // console.log(line)
 }
 
 console.log('-------------Q NO 2-----------')
 
-for (let i = 5; i >= 0; i--) {
+for (let i = 5; i > 0; i--) {
     let line = ''
-    for (let j = 0; j < i; j++) {
-        line += '*'
-    }
-console.log(line)
+    // for (let j = 0; j < i; j++) {
+    //     line += '*'
+    // }
+console.log('*'.repeat(i))
+// console.log(line)
 }
 
 
