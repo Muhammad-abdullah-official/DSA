@@ -40,22 +40,19 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.log('-------------Q NO 4-----------')
-for (let i = 5; i > 0; i--) {
+for (let i = 5; i >= 1; i--) {
     let line = ''
     let space = ''
     
-    for (let j = 0; j < 5-i; j++) {
-        space += ' '
-    }
-    for (let k = 0; k < 2*i -1; k++) {
-        line += '*'
-    }
-    console.log(space + line)
+    // for (let j = 0; j < 5-i; j++) {
+    //     space += ' '
+    // }
+    // for (let k = 0; k < 2*i -1; k++) {
+    //     line += '*'
+    // }
+    // console.log(space + line)
+    console.log(' '.repeat(5-i), '*'.repeat(2*i-1))
 }
-
-// for (let i = 5; i >= 1; i--) {
-//     console.log(' '.repeat(5 - i) + '*'.repeat(2 * i - 1));
-// }
 
 console.log('-------------Q NO 5-----------')
 for (let i = 0; i<5 ; i++) {
