@@ -6,8 +6,8 @@ for (let i = 1; i <= 5; i++) {
     //     // console.log('j',j)
     //     line += '*'
     // }
-    console.log('i:',i)
-console.log(`* ${i}`.repeat(i))
+
+console.log(`*`.repeat(i))
 // console.log(line)
 }
 
@@ -27,13 +27,15 @@ console.log('-------------Q NO 3-----------')
 for (let i = 0; i < 5; i++) {
     let line = ''
     let space = ''
-    for (let j = 4; j > i; j--) {
-        space += ' '
-    }
-    for (let k = 0; k < 2 * i +1; k++) {
-        line += '*'
-    }
-    console.log(space + line) // concate
+    // for (let j = 4; j > i; j--) {
+    //     space += ' '
+    // }
+    // for (let k = 0; k < 2 * i +1; k++) {
+    //     line += '*'
+    // }
+    // console.log(space + line) // concate
+
+    console.log(' '.repeat(4-i), '*'.repeat(2*i+1))
     
 }
 
