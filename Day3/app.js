@@ -2,10 +2,12 @@
 console.log('-------------Q NO 1-----------')
 for (let i = 0; i < 5; i++) {
     let line = ''
-    for (let j = 0; j <= i; j++) {
-        line += '*'
-    }
-console.log(line)
+    // for (let j = 0; j <= i; j++) {
+    //     line += '*'
+    // }
+    
+console.log('*'.repeat(i))
+// console.log(line)
 }
 
 console.log('-------------Q NO 2-----------')
