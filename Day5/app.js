@@ -74,4 +74,35 @@ else{
 console.log('-------------- Q7 --------------')
 let num7 = 153
 let temp3 = num7
+let cc =0
+let count = 0
+while(temp3 >0 ){
+    count++
+    cc = temp3 % 10
+    temp3 = Math.floor(temp3/10)
 
+}
+
+console.log(count)
+let sum =0
+ temp3 = num7
+
+    while(temp3>0){
+        num = temp3 % 10
+        let power = 1
+        for(let i=1; i<= count; i++){
+            power *=num
+        }
+        sum += power
+        power =1
+        temp3 = Math.floor(temp3 /10)
+        
+    }
+
+    if (sum == num7){
+        console.log('Armstrong Number', sum)
+    }
+    else{
+        console.log('Not Armstrong Number', num7)
+
+    }
