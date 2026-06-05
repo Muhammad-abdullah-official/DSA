@@ -106,3 +106,41 @@ let sum =0
         console.log('Not Armstrong Number', num7)
 
     }
+
+console.log('-------------- Q8 --------------')
+let num8 = 123
+let temp8 = num8
+let sum8 =0
+
+while (temp8 > 0){
+    sum8 += temp8 % 10
+    temp8 = Math.floor(temp8/ 10)
+}
+
+console.log(sum8)
+
+console.log('-------------- Q9 --------------')
+let num9 = 1234
+let temp9 = num9
+let sum9 =0
+let avg9 =0
+let count9 =0
+while (temp9 > 0){
+    count9 ++
+    sum9 += temp9 % 10
+    temp9 = Math.floor(temp9 /10)
+}
+
+avg9 = sum9 /count9
+console.log(avg9)
+
+console.log('-------------- Q10 --------------')
+let num10 = 9483
+let temp10 =num10
+let max = 0
+let min = 0
+
+while(temp10 > 0){
+    max = temp10 % 10
+    
+}
