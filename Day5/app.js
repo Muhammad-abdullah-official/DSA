@@ -208,3 +208,27 @@ if(sum1142 == num1142){
 else{
     console.log('Not Strong number', num1142)
 }
+
+console.log('-------------- Q12, 5 --------------')
+let num125 = 25
+let temp125 = num125
+let sq125 = num125 * num125
+let count125 =0
+while (temp125 >0){
+    count125++
+    let num = temp125 %10
+    temp125 = Math.floor(temp125/10)
+}
+let multiplier = 1
+for (let i = 0; i < count125; i++) {
+    multiplier *= 10
+    
+}
+let check125 = sq125 % multiplier
+if(check125 == num125){
+    console.log('Automorphic Number', num125)
+}
+else{
+    console.log('Not Automorphic Number', num125)
+}
+
