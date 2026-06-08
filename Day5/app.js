@@ -107,7 +107,7 @@ let sum =0
 
     }
 
-console.log('-------------- Q8 --------------')
+console.log('-------------- Q8, 1 --------------')
 let num8 = 123
 let temp8 = num8
 let sum8 =0
@@ -119,7 +119,7 @@ while (temp8 > 0){
 
 console.log(sum8)
 
-console.log('-------------- Q9 --------------')
+console.log('-------------- Q9, 2 --------------')
 let num9 = 1234
 let temp9 = num9
 let sum9 =0
@@ -134,13 +134,77 @@ while (temp9 > 0){
 avg9 = sum9 /count9
 console.log(avg9)
 
-console.log('-------------- Q10 --------------')
-let num10 = 9483
+console.log('-------------- Q10, 3 --------------')
+let num10 = 48193
 let temp10 =num10
 let max = 0
 let min = 0
+let num11 =0 
 
 while(temp10 > 0){
-    max = temp10 % 10
+    num11 = temp10 % 10
     
+    if(num11 > max){
+        max = num11
+    }
+    if( num11 < min || min ==0){
+        min = num11
+    }
+    temp10 = Math.floor(temp10 / 10)
+    
+}
+
+console.log(max)
+console.log(min)
+
+console.log('-------------- Q11, 4 --------------')
+let num114 = 145
+let temp114 = num114
+let no114 =0
+let sum114 =0
+
+function factorial (n){
+    if(n==0 || n==1){
+        return 1    
+    }
+    else{
+        return n*factorial(n-1)
+    }
+}
+
+while(temp114 > 0){
+    no114 = temp114 % 10
+    sum114+= factorial(no114)
+    temp114 = Math.floor(temp114 / 10)
+}
+
+if(sum114 == num114){
+    console.log('Strong number', num114)
+}
+else{
+    console.log('Not Strong number', num114)
+}
+
+console.log('-------------- Q11, 4,2 --------------')
+let num1142 = 165
+let temp1142 = num1142
+let no1142 =0
+let sum1142 =0
+
+
+while(temp1142 > 0){
+    no1142 = temp1142 % 10
+    let fac = 1
+    for (let i = 1; i <= no1142; i++) {
+        fac *=i
+    }
+
+    sum1142+=fac
+    temp1142 = Math.floor(temp1142 / 10)
+}
+if(sum1142 == num1142){
+    console.log('Strong number', num1142)
+}
+else{
+    console.log('Not Strong number', num1142)
 }
