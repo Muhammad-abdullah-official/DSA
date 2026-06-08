@@ -232,3 +232,41 @@ else{
     console.log('Not Automorphic Number', num125)
 }
 
+console.log('-------------- Q13, 6 --------------')
+let num136 = 112233224
+let temp136 = num136
+let count136 = 0
+let arr = []
+let freq = {}
+
+while(temp136 >0 ){
+    let digit = temp136 % 10
+    arr.push(digit)
+    if(freq[digit] ){
+        freq[digit] ++
+    }
+    else{
+        freq[digit] = 1
+    }
+    temp136 = Math.floor(temp136 / 10)
+}
+
+console.log(freq)
+
+console.log('-------------- Q14, 7 --------------')
+let num147 = 18
+let temp147 = num147
+let res = 0
+
+while(temp147 > 0){
+    let digit = temp147 %10
+    res += digit
+    temp147 = Math.floor(temp147 / 10)
+}
+
+if(num147 % res ==0){
+    console.log('Harshad Number', num147)
+}
+else{
+    console.log('Not Harshad Number', num147)
+}
